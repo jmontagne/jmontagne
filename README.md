@@ -1,39 +1,66 @@
 # Hi there, I'm Jacques Montagne 👋
 
-### Senior Solutions Architect | Java & AWS Specialist
-*Expert in modernizing Legacy Java Monoliths into Cloud-Native Serverless Architectures.*
+### Senior Solutions Architect | Java & Cloud-Native Specialist
+*Transforming Legacy Monoliths into Intelligent, Event-Driven Architectures.*
 
 ---
 
-## 🚀 Engineering Portfolio & Modernization Roadmap
+## 🚀 Engineering Portfolio: The 2025 Modernization Roadmap
 
-I don't just design systems; I build Proof of Concepts (POCs) to validate architecture decisions for high-stakes enterprise environments (Banking/Insurance).
+Leveraging insights from **AWS re:Invent 2025** (specifically the *App Modernization* and *Agentic AI* tracks), I am building a reference implementation for highly regulated industries.
 
-Below is my active roadmap for demonstrating a full migration path from Legacy Java to AWS Serverless.
-
-### 🏗️ Phase 1: Compute & AI Optimization (Completed)
-**Goal:** Solve the "Cold Start" problem in Java to make Lambda viable for latency-sensitive APIs.
-* **Project:** [Serverless Java 21 SnapStart + Bedrock API](https://github.com/jmontagne/poc_java_lambda_snapstart_bedrock)
-* **Tech Stack:** Java 21, Spring Boot 3, AWS Lambda SnapStart, CRaC, AWS Bedrock (Claude 3.5), Terraform.
-* **Result:** Reduced cold starts by **90%** (<500ms) while integrating GenAI capabilities.
-
-### 💾 Phase 2: Data Persistence & Consistency (Coming Soon)
-**Goal:** Handle high-concurrency database connections in Serverless without exhausting the pool.
-* **Focus:** Managing "Stale Connections" during SnapStart restore phases.
-* **Tech Stack:** AWS RDS Proxy, PostgreSQL, Hibernate/JPA, HikariCP customization.
-
-### ⚡ Phase 3: Event-Driven Decoupling (Planned)
-**Goal:** Breaking the Monolith into independent, asynchronous microservices.
-* **Focus:** Reliable event processing and failure handling.
-* **Tech Stack:** Amazon EventBridge, SQS (DLQ), Lambda Consumers.
-
-### 🛡️ Phase 4: Enterprise Security (Planned)
-**Goal:** Zero-Trust implementation for public-facing APIs.
-* **Focus:** Authentication and Web Application Firewall rules.
-* **Tech Stack:** API Gateway, Amazon Cognito (OAuth2/OIDC), AWS WAF.
+My goal is to demonstrate the full lifecycle: from optimizing Java Compute to orchestrating Autonomous Agents via **MCP (Model Context Protocol)**.
 
 ---
 
-### 📫 Contact Me
+### ✅ Phase 1: Production-Ready Serverless Java (Completed)
+**The Workshop Insight:** *"From Serverful to Serverless Java"* & *"Level Up with Powertools"*
+**The Implementation:** A robust API connecting Java 21 with GenAI, hardened for production.
+* **Core:** Java 21 + Spring Boot 3 + SnapStart (CRaC).
+* **Observability:** Integrated **AWS Lambda Powertools for Java** for structured logging, tracing (X-Ray), and Idempotency handling (crucial for payments).
+* **Repo:** [🔗 Serverless Java 21 SnapStart + Bedrock API](https://github.com/jmontagne/poc_java_lambda_snapstart_bedrock)
+
+---
+
+### 🚧 Phase 2: Data & The "Model Context Protocol" (Next Up)
+**The Workshop Insight:** *"Building Production-Ready Data Systems for AI"*
+**The Goal:** Exposing Legacy SQL data to AI Agents without building ad-hoc connectors.
+* **Innovation:** Implementing **MCP (Model Context Protocol)** to standardize how Agents query the database.
+* **Tech Stack:**
+    * **AWS RDS Proxy** + **Aurora Limitless** (Scalable SQL).
+    * **MCP Server (Java/Spring)**: Creating a standardized interface for AI.
+    * **Hibernate/JPA**: Optimized for short-lived Lambda contexts.
+
+---
+
+### 🛠️ Phase 3: Automated Refactoring Pipeline (Planned)
+**The Workshop Insight:** *"Automate Java application upgrade with GenAI"*
+**The Goal:** Accelerating Technical Debt reduction (Java 8 -> 21).
+* **The Solution:** Building a CI/CD pipeline step that utilizes **Amazon Q Code Transformation**.
+* **Focus:** Automated dependency analysis and upgrade planning for monolithic repos.
+
+---
+
+### 🧪 Phase 4: The Performance Benchmark (Rust vs. Java)
+**The Goal:** "Extreme Low Latency - Is it worth the rewrite?"
+**The Solution:** A side-by-side comparison of the same logic written in **Java (SnapStart)** and **Rust**.
+* **Tech Stack:** **Cargo Lambda**, **Rust Runtime for AWS Lambda**.
+* **KPIs:** Cold Start duration, Memory footprint cost, Developer Velocity trade-offs.
+
+---
+
+### 🤖 Phase 5: Agentic Workflows & Spec-Driven Dev
+**The Workshop Insight:** *"Create your own AI sidekick"* (Kiro IDE)
+**The Goal:** Moving from "Chat" to "Action".
+* **Methodology:** **Spec-Driven Development** using **Kiro** to generate compliant code.
+* **Tech Stack:**
+    * **Amazon Bedrock Agents** with **Strands** framework.
+    * **Action Groups** defined via OpenAPI.
+    * **SageMaker Unified Studio** for end-to-end ML lifecycle.
+
+---
+
+### 📫 Contact & Credentials
+* **Role Focus:** Senior Cloud Architect / Tech Lead.
+* **Core Stack:** Java, Rust (Learning), AWS, Terraform, Powertools, Agentic AI.
 * **LinkedIn:** [linkedin.com/in/jmontagne](https://www.linkedin.com/in/jmontagne/)
-* **Focus:** Available for Senior Architect / Cloud Lead roles.
