@@ -1,66 +1,76 @@
 # Hi there, I'm Jacques Montagne 👋
 
-### Senior Solutions Architect | Java & Cloud-Native Specialist
-*Transforming Legacy Monoliths into Intelligent, Event-Driven Architectures.*
+### Senior Solutions Architect | Java & Agentic AI Specialist
+*Transforming Legacy Monoliths into Intelligent, Spec-Driven Cloud Architectures.*
 
 ---
 
 ## 🚀 Engineering Portfolio: The 2025 Modernization Roadmap
 
-Leveraging insights from **AWS re:Invent 2025** (specifically the *App Modernization* and *Agentic AI* tracks), I am building a reference implementation for highly regulated industries.
+Fresh from **AWS re:Invent 2025**, I am executing a strategic roadmap to migrate highly regulated enterprise systems (Banking/Insurance) into a **Serverless, Agentic, and Event-Driven platform**.
 
-My goal is to demonstrate the full lifecycle: from optimizing Java Compute to orchestrating Autonomous Agents via **MCP (Model Context Protocol)**.
+This portfolio moves beyond simple "Chatbots" to demonstrate **Agentic Workflows** (Agents that *act*), **Spec-Driven Development**, and **Hardened Security**.
 
 ---
 
 ### ✅ Phase 1: Production-Ready Serverless Java (Completed)
-**The Workshop Insight:** *"From Serverful to Serverless Java"* & *"Level Up with Powertools"*
-**The Implementation:** A robust API connecting Java 21 with GenAI, hardened for production.
-* **Core:** Java 21 + Spring Boot 3 + SnapStart (CRaC).
-* **Observability:** Integrated **AWS Lambda Powertools for Java** for structured logging, tracing (X-Ray), and Idempotency handling (crucial for payments).
+**The Challenge:** "Java is too slow and opaque for Serverless."
+**The Solution:** A sub-500ms cold start architecture with enterprise-grade observability.
+* **Core:** Java 21 + Spring Boot 3 + **AWS Lambda SnapStart** (CRaC).
+* **Observability:** Integrated **AWS Lambda Powertools** for structured logging, distributed tracing (X-Ray), and Idempotency (crucial for payments).
+* **GenAI Integration:** Connected to Claude 3.5 Sonnet via Bedrock using Spring Cloud Function.
 * **Repo:** [🔗 Serverless Java 21 SnapStart + Bedrock API](https://github.com/jmontagne/poc_java_lambda_snapstart_bedrock)
 
 ---
 
 ### 🚧 Phase 2: Data & The "Model Context Protocol" (Next Up)
-**The Workshop Insight:** *"Building Production-Ready Data Systems for AI"*
-**The Goal:** Exposing Legacy SQL data to AI Agents without building ad-hoc connectors.
-* **Innovation:** Implementing **MCP (Model Context Protocol)** to standardize how Agents query the database.
+**The Challenge:** "Legacy SQL databases cannot scale with AI Agents."
+**The Solution:** Exposing Legacy Data to AI via standardized protocols without ad-hoc connectors.
+* **The Architecture:**
+    * **AWS RDS Proxy** + **Aurora Limitless** (Handling massive concurrency from Agent swarms).
+    * **MCP Server (Model Context Protocol):** A Java/Spring adapter exposing SQL data to Agents in a standardized way.
+    * **Hibernate/JPA:** Optimized for short-lived Lambda contexts.
+
+---
+
+### 🧪 Phase 3: Agentic Workflows & Spec-Driven Development
+**The Challenge:** "AI code generation is chaotic ('Vibe Coding')."
+**The Solution:** Moving to **Spec-Driven Development (SDD)** where Agents implement verified requirements.
+* **Methodology:** Utilizing **Kiro** to generate enterprise-grade code from structured specs (Requirements → Design → Code).
+* **Agent Framework:** Building an **"Insurance Agent"** using **AWS Strands SDK** and **LangChain4j**.
+* **Capabilities:**
+    * **Action Groups:** Agents executing real API calls (e.g., "Cancel Policy").
+    * **Strands SOPs:** Embedding Standard Operating Procedures as system prompts.
+
+---
+
+### 🛡️ Phase 4: AI Governance & "The Vision Claim Agent"
+**The Challenge:** "We need to automate claims processing without hallucinations."
+**The Solution:** A Multi-Modal Agent that analyzes images and enforces strict Guardrails.
+* **Use Case:** "Vision Claim Agent" – Analyzing car accident photos to estimate damage costs.
 * **Tech Stack:**
-    * **AWS RDS Proxy** + **Aurora Limitless** (Scalable SQL).
-    * **MCP Server (Java/Spring)**: Creating a standardized interface for AI.
-    * **Hibernate/JPA**: Optimized for short-lived Lambda contexts.
+    * **Claude 3.5 Sonnet (Vision)** for image analysis.
+    * **Guardrails for Amazon Bedrock** (PII redaction, Topic blocking).
+    * **Automated Eval:** CI/CD pipeline using **LLM-as-a-Judge** to verify agent decisions before deployment.
 
 ---
 
-### 🛠️ Phase 3: Automated Refactoring Pipeline (Planned)
-**The Workshop Insight:** *"Automate Java application upgrade with GenAI"*
-**The Goal:** Accelerating Technical Debt reduction (Java 8 -> 21).
-* **The Solution:** Building a CI/CD pipeline step that utilizes **Amazon Q Code Transformation**.
-* **Focus:** Automated dependency analysis and upgrade planning for monolithic repos.
+### 🛠️ Phase 5: Automated Modernization Pipeline
+**The Challenge:** "Refactoring Monoliths takes years."
+**The Solution:** AI-Assisted Upgrades.
+* **Tooling:** Implementing **Amazon Q Code Transformation** in the CI/CD pipeline to automate Java 8 → 21 upgrades and dependency analysis.
 
 ---
 
-### 🧪 Phase 4: The Performance Benchmark (Rust vs. Java)
-**The Goal:** "Extreme Low Latency - Is it worth the rewrite?"
-**The Solution:** A side-by-side comparison of the same logic written in **Java (SnapStart)** and **Rust**.
-* **Tech Stack:** **Cargo Lambda**, **Rust Runtime for AWS Lambda**.
+### ⚡ Phase 6: The Performance Benchmark (Rust vs. Java)
+**The Goal:** "Extreme Low Latency - Is the rewrite worth it?"
+**The Solution:** A side-by-side comparison of the same business logic.
+* **Tech Stack:** **Cargo Lambda** (Rust) vs. **SnapStart** (Java).
 * **KPIs:** Cold Start duration, Memory footprint cost, Developer Velocity trade-offs.
-
----
-
-### 🤖 Phase 5: Agentic Workflows & Spec-Driven Dev
-**The Workshop Insight:** *"Create your own AI sidekick"* (Kiro IDE)
-**The Goal:** Moving from "Chat" to "Action".
-* **Methodology:** **Spec-Driven Development** using **Kiro** to generate compliant code.
-* **Tech Stack:**
-    * **Amazon Bedrock Agents** with **Strands** framework.
-    * **Action Groups** defined via OpenAPI.
-    * **SageMaker Unified Studio** for end-to-end ML lifecycle.
 
 ---
 
 ### 📫 Contact & Credentials
 * **Role Focus:** Senior Cloud Architect / Tech Lead.
-* **Core Stack:** Java, Rust (Learning), AWS, Terraform, Powertools, Agentic AI.
+* **Core Stack:** Java, AWS, Terraform, Spring Boot, LangChain4j, Strands.
 * **LinkedIn:** [linkedin.com/in/jmontagne](https://www.linkedin.com/in/jmontagne/)
