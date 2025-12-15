@@ -1,10 +1,11 @@
 # Hi there, I'm Jacques Montagne 👋
 
 <div align="center">
-   
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com//in/jacquesmontagne/)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jacquesmontagne/)
 
 </div>
+
 
 ### Senior Solutions Architect | Java & Agentic AI Specialist
 *Transforming Legacy Monoliths into Intelligent, Spec-Driven Cloud Architectures.*
@@ -79,4 +80,4 @@ This portfolio moves beyond simple "Chatbots" to demonstrate **Agentic Workflows
 ### 📫 Contact & Credentials
 * **Role Focus:** Senior Cloud Architect / Tech Lead.
 * **Core Stack:** Java, AWS, Terraform, Spring Boot, LangChain4j, Strands.
-* **LinkedIn:** [linkedin.com/in/jmontagne](https://www.linkedin.com/in/jmontagne/)
+* **LinkedIn:** [linkedin.com/in/jacquesmontagne](https://www.linkedin.com/in/jacquesmontagne/)
