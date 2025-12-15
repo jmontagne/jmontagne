@@ -1,5 +1,9 @@
 # Hi there, I'm Jacques Montagne 👋
+<div align="center">
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jmontagne/)
+
+</div>
 ### Senior Solutions Architect | Java & Agentic AI Specialist
 *Transforming Legacy Monoliths into Intelligent, Spec-Driven Cloud Architectures.*
 
