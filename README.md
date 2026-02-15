@@ -3,7 +3,7 @@
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_the_Architect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jacquesmontagne/)
-[![AWS](https://img.shields.io/badge/AWS-6x_Certified-232F3E?style=for-the-badge&logo=amazon-aws)](https://www.credly.com/)
+[![AWS](https://img.shields.io/badge/AWS-7x_Certified-232F3E?style=for-the-badge&logo=amazon-aws)](https://www.credly.com/)
 [![Java](https://img.shields.io/badge/Java-Legacy_Modernization-ED8B00?style=for-the-badge&logo=openjdk)](https://github.com/jmontagne)
 
 **Senior Cloud Architect & Tech Lead** based in Normandy, France.
@@ -25,38 +25,44 @@ My focus is on **Engineering Rigor**: Security, Compliance, and Observability in
 ### 🏆 1. [Serverless Java 21 SnapStart + Bedrock](https://github.com/jmontagne/poc_java_lambda_snapstart_bedrock)
 > **Status:** `Production Ready` | **Type:** `Reference Architecture`
 
-**The Solution:** A high-performance template achieving sub-500ms cold starts.
-* **Stack:** Java 21, Spring Boot 3, AWS Lambda SnapStart, Amazon Bedrock.
-* **Use Case:** Real-time transaction analysis.
+A high-performance serverless function with sub-500ms cold starts, full observability, and Infrastructure as Code.
+* **Stack:** Java 21, Spring Boot 3.2, Spring Cloud Function, AWS Lambda SnapStart (CRaC), Amazon Bedrock (Claude), Terraform.
+* **Observability:** AWS Lambda Powertools (structured logging, CloudWatch EMF metrics, X-Ray tracing).
+* **Use Case:** Real-time transaction analysis, fraud detection, domain Q&A for regulated enterprises.
 
 ### 🧪 2. [The AWS GenAI Architect Lab](https://github.com/jmontagne/aws-genai-architect-lab)
-> **Status:** `Active Learning` | **Type:** `Rapid Prototyping`
+> **Status:** `Active Development` | **Type:** `Learning Laboratory`
 
-**The Goal:** A collection of isolated POCs covering specific **AWS GenAI Professional** exam domains.
-No "Hello World" tutorials—only specific architectural patterns implemented rapidly.
+A collection of isolated POCs — **"One Concept, One POC"** — covering AWS GenAI Professional (AIP-C01) exam domains. Each POC includes Java source code, unit tests, and Terraform IaC.
 
-**Featured Experiments:**
-* **POC-01: RAG with Knowledge Bases:** Implementing advanced chunking strategies.
-* **POC-02: SQL Agents:** Building safe database query agents with LangChain4j.
-* **POC-03: Guardrails:** Testing PII redaction filters on real datasets.
-* **POC-04: Model Eval:** Automated quality scoring using Python & Ragas.
+**Completed:**
+* **POC-01 — Bedrock Inference & Observability:** REST API with streaming, model comparison (Sonnet vs Haiku), TTFT metrics, API Gateway + Lambda + SnapStart deployment, Bedrock invocation logging to CloudWatch & S3.
+* **POC-02 — RAG Pipeline & Knowledge Bases:** Full Retrieve & Generate pipeline with citations, hybrid/semantic search, metadata filtering, LLM-as-Judge evaluation (relevance + groundedness), OpenSearch Serverless vector store. *62 unit tests.*
+* **POC-03 — Tool Use & Bedrock Agents:** Comparison of programmatic tool use (Converse API + manual ReAct loop) vs managed Bedrock Agents. Flight booking domain with DynamoDB, OpenAPI schema, Lambda Action Groups. *(In progress — Terraform partially complete.)*
+
+**Planned:**
+* **POC-04 — Security Guardrails & PII Redaction:** Bedrock Guardrails, PII filtering, GDPR compliance patterns.
+* **POC-05 — Automated Evaluation:** LLM-as-Judge with Ragas, faithfulness & relevance metrics.
+* **POC-06 — Multi-modal Vision:** Claude Vision for insurance claim photo processing.
+* **POC-07 — Model Fine-tuning:** JSONL dataset preparation, Bedrock fine-tuning workflows.
 
 ---
 
 ## 🛠️ Technical Arsenal
 
-| Domain | Stack Preferred |
+| Domain | Stack |
 | :--- | :--- |
-| **Application Logic** | **Java 21 (LTS)**, Spring Boot 3.x, LangChain4j |
+| **Application Logic** | **Java 21 (LTS)**, Spring Boot 3.x, Spring Cloud Function, LangChain4j |
 | **Ops & Evaluation** | **Python 3.12**, Boto3, Ragas |
-| **Infrastructure** | **AWS** (Lambda, ECS), Terraform |
-| **Data** | PostgreSQL (pgvector), OpenSearch Serverless |
+| **Infrastructure** | **AWS** (Lambda, ECS, Bedrock, API Gateway, OpenSearch Serverless), **Terraform** |
+| **Data & Retrieval** | PostgreSQL (pgvector), OpenSearch Serverless, DynamoDB |
+| **Observability** | AWS Lambda Powertools, CloudWatch, X-Ray, structured JSON logging |
 
 ---
 
 ## ✍️ Insights
-* **[Dev.to]**: Technical deep-dives on Legacy Modernization.
-* **[LinkedIn]**: Daily insights on Cloud Architecture.
+* **[Dev.to](https://dev.to/jmontagne)**: Technical deep-dives on Legacy Modernization & GenAI Architecture.
+* **[LinkedIn](https://www.linkedin.com/in/jacquesmontagne/)**: Insights on Cloud Architecture & Safe Modernization.
 
 <div align="center">
     <a href="https://www.linkedin.com/in/jacquesmontagne/">Contact me for B2B Architecture Consulting</a>
