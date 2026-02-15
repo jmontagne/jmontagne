@@ -46,6 +46,14 @@ A collection of isolated POCs — **"One Concept, One POC"** — covering AWS Ge
 * **POC-06 — Multi-modal Vision:** Claude Vision for insurance claim photo processing.
 * **POC-07 — Model Fine-tuning:** JSONL dataset preparation, Bedrock fine-tuning workflows.
 
+### 🧠 3. [Context Engine — Cross-Model Context Compaction](https://github.com/jmontagne/context-engine)
+> **Status:** `Working POC` | **Type:** `Context Engineering` | **Cloud:** `GCP`
+
+Demonstrates **Context Engineering** — a two-stage inference pipeline where a cheap model (Gemini 2.0 Flash) summarizes conversation history before sending it to an expensive model (Gemini 2.5 Pro). Achieves **~55% context window reduction** with negligible quality loss.
+* **Stack:** Java 21, Spring Boot 3.4, LangChain4j, Google Vertex AI (Gemini), Cloud Run, Terraform.
+* **Key Insight:** Managing *what* enters the context window matters more than prompt phrasing — especially in multi-turn agentic systems.
+* **Endpoints:** `/api/chat` (with compaction) vs `/api/chat-raw` (without) for A/B cost comparison.
+
 ---
 
 ## 🛠️ Technical Arsenal
@@ -54,7 +62,7 @@ A collection of isolated POCs — **"One Concept, One POC"** — covering AWS Ge
 | :--- | :--- |
 | **Application Logic** | **Java 21 (LTS)**, Spring Boot 3.x, Spring Cloud Function, LangChain4j |
 | **Ops & Evaluation** | **Python 3.12**, Boto3, Ragas |
-| **Infrastructure** | **AWS** (Lambda, ECS, Bedrock, API Gateway, OpenSearch Serverless), **Terraform** |
+| **Infrastructure** | **AWS** (Lambda, ECS, Bedrock, API Gateway, OpenSearch Serverless), **GCP** (Cloud Run, Vertex AI), **Terraform** |
 | **Data & Retrieval** | PostgreSQL (pgvector), OpenSearch Serverless, DynamoDB |
 | **Observability** | AWS Lambda Powertools, CloudWatch, X-Ray, structured JSON logging |
 
