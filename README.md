@@ -39,9 +39,9 @@ A collection of isolated POCs — **"One Concept, One POC"** — covering AWS Ge
 * **POC-01 — Bedrock Inference & Observability:** REST API with streaming, model comparison (Sonnet vs Haiku), TTFT metrics, API Gateway + Lambda + SnapStart deployment, Bedrock invocation logging to CloudWatch & S3.
 * **POC-02 — RAG Pipeline & Knowledge Bases:** Full Retrieve & Generate pipeline with citations, semantic search, metadata filtering, LLM-as-Judge evaluation (relevance + groundedness), S3 Vectors store. Pure Terraform IaC — single `terraform apply` deploys 18 resources in ~20s. *62 unit tests.*
 * **POC-03 — Tool Use & Bedrock Agents:** Comparison of programmatic tool use (Converse API + manual ReAct loop) vs managed Bedrock Agents. Flight booking domain with DynamoDB, OpenAPI schema, Lambda Action Groups. Cost-optimized with Claude 3.5 Haiku. *35 unit tests.*
+* **POC-04 — Security Guardrails (MASK vs BLOCK):** All 6 Bedrock Guardrail filter types (content, denied topics, word, PII, contextual grounding, regex). Two patterns: standalone `ApplyGuardrail` ($0 model cost) vs `Converse` API with inline filtering. Side-by-side ANONYMIZE vs BLOCK PII comparison. Python/Boto3. *12 unit tests.*
 
 **Planned:**
-* **POC-04 — Security Guardrails & PII Redaction:** Bedrock Guardrails, PII filtering, GDPR compliance patterns.
 * **POC-05 — Automated Evaluation:** LLM-as-Judge with Ragas, faithfulness & relevance metrics.
 * **POC-06 — Multi-modal Vision:** Claude Vision for insurance claim photo processing.
 * **POC-07 — Model Fine-tuning:** JSONL dataset preparation, Bedrock fine-tuning workflows.
